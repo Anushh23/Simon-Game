@@ -61,8 +61,10 @@ topLeft.addEventListener('click',one);
 topRight.addEventListener('click',two);
 bottomRight.addEventListener('click',three);
 bottomLeft.addEventListener('click',four);
+
 function check(value,count){
-      if(order[count-1]==value){return 1;}
+    if(order.length==0){alert("Wait for computer's turn!"); return 2;}
+    else if(order[count-1]==value){return 1;}
       else{return 0;}
 }
 function wrongAnswer(){
@@ -85,7 +87,7 @@ function one(){
             // order=[];
             setTimeout(playGame,500);
         }  }
-      else{
+      else if(ans==0){
           addSound(5);
           wrongAnswer();
       }  
@@ -102,7 +104,7 @@ function two(){
             // order=[];
             setTimeout(playGame,500);
         }  }
-    else{
+    else if(ans==0){
             addSound(5);
             wrongAnswer();
         }       
@@ -119,7 +121,7 @@ function three(){
             // order=[];
             setTimeout(playGame,500);
         }  }
-    else{
+    else if(ans==0){
             addSound(5);
             wrongAnswer();
         } 
@@ -137,7 +139,7 @@ function four(){
         // order=[];
         setTimeout(playGame,500);
     }  }
-    else{
+    else if(ans==0){
         addSound(5);
         wrongAnswer();
     }
