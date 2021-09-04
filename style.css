@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#nav1{
+    /* background-color:rgb(182, 202, 228); */
+    font-family: 'Cinzel', serif;
+    color: whitesmoke;
+}
+body{
+    background-image: url('images/bg-2.jpg');
+}
+#n1{
+    min-height: 60vh;
+}
+#result{
+    color: whitesmoke;
+    font-family: 'Courgette', cursive;
+}
+#demo{
+    font-size: larger;
+    font-family: 'Courgette', cursive;
+    color: whitesmoke;
+}
+#name1{
+    font-size: 20px;
+    font-weight: bold;
+    /* color: lightgrey; */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#outerCircle{
+    background-color:rgb(2, 48, 48);
+    width: 400px;
+    height: 400px;
+    border-radius: 50% !important;
+    border: 2px solid black;
+    position: relative;
+}
+#innerCircle{
+    background-color:rgb(106, 133, 161);
+    width: 200px;
+    height: 200px;
+    border-radius: 50% !important;
+    border: 3px solid black;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border-collapse: collapse;
+}
+#topLeft{
+      background-color: rgb(184, 17, 17);
+      position: absolute;
+      width: 200px;
+      height: 200px;   
+      border-radius: 200px 0px 0px 0px;
+      top: 0%;
+      left: 0%;
+      border: 3px solid black;
+      border-collapse: collapse;
+}
+#topRight{
+    background-color: rgb(15, 136, 15);
+    position: absolute;
+    width: 200px;
+    height: 200px;   
+    border-radius: 0px 200px 0px 0px;
+    top: 0%;
+    left: 50%;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+#bottomLeft{
+    background-color: yellow;
+    position: absolute;
+    width: 200px;
+    height: 200px;   
+    border-radius: 0px 0px 0px 200px;
+    top: 50%;
+    left: 0%;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+#bottomRight{
+    background-color: rgb(37, 40, 221);
+    position: absolute;
+    width: 200px;
+    height: 200px;   
+    border-radius: 0px 0px 200px 0px;
+    top: 50%;
+    left: 50%;
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+.animation1{
+background-color: rgb(185, 103, 103)   !important;
+opacity: 0.8;
+box-shadow: -5px -5px 5px 5px #DBEDF3;
+}
+.animation2{
+background-color: rgb(124, 194, 124)  !important;
+opacity: 0.8;
+box-shadow: 5px -5px 5px 5px  #DBEDF3;
+}
+.animation3{
+background-color: rgb(110, 112, 223)   !important;
+opacity: 0.8;
+box-shadow: 5px 5px 5px 5px  #DBEDF3;
+}
+.animation4{
+background-color: rgb(247, 247, 147)  !important;
+opacity: 0.8;
+box-shadow: -5px 5px 5px 5px  #DBEDF3;
+}
+#iconMusic{
+    font-size: 28px;
+}
+@media screen and (max-width: 600px){
+    #outerCircle{
+        width: 300px;
+        height: 300px;
+    }
+    #innerCircle{
+        width: 150px;
+        height: 150px;
+    }
+    #topLeft{
+      width: 150px;
+      height: 150px;   
+      border-radius: 150px 0px 0px 0px;
+    }
+    #topRight{
+        width: 150px;
+        height: 150px;   
+        border-radius: 0px 150px 0px 0px;
+      }
+    #bottomRight{
+        width: 150px;
+        height: 150px;   
+        border-radius: 0px 0px 150px 0px;
+      }
+    #bottomLeft{
+        width: 150px;
+        height: 150px;   
+        border-radius: 0px 0px 0px 150px;
+      }
+    #iconMusic{
+        font-size: 16px;
+    }  
+}
+@media screen and (max-width: 300px){
+    #outerCircle{
+        width: 250px;
+        height: 250px;
+    }
+    #innerCircle{
+        width: 125px;
+        height: 125px;
+    }
+    #topLeft{
+      width: 125px;
+      height: 125px;   
+      border-radius: 125px 0px 0px 0px;
+    }
+    #topRight{
+        width: 125px;
+        height: 125px;   
+        border-radius: 0px 125px 0px 0px;
+      }
+    #bottomRight{
+        width: 125px;
+        height: 125px;   
+        border-radius: 0px 0px 125px 0px;
+      }
+    #bottomLeft{
+        width: 125px;
+        height: 125px;   
+        border-radius: 0px 0px 0px 125px;
+      }
+      #name1{
+          font-size: 16px;
+      }
+      #iconMusic{
+          font-size: 16px;
+      }
+}
